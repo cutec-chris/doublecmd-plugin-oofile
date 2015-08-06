@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <Version Value="9"/>
+    <Units Count="2">
+      <Unit0>
+        <Filename Value="oofile.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="oofile"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="19"/>
+        <CursorPos X="9" Y="17"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="wlxplugin.pas"/>
+        <UnitName Value="WLXPlugin"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="10"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit1>
+    </Units>
+    <JumpHistory Count="1">
+      <Position1>
+        <Filename Value="oofile.lpr"/>
+        <Caret Line="17" Column="9"/>
+      </Position1>
+    </JumpHistory>
+  </ProjectSession>
+</CONFIG>
