@@ -2,31 +2,180 @@
 <CONFIG>
   <ProjectSession>
     <Version Value="9"/>
-    <Units Count="2">
+    <Units Count="17">
       <Unit0>
         <Filename Value="oofile.lpr"/>
         <IsPartOfProject Value="True"/>
-        <UnitName Value="oofile"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="19"/>
-        <CursorPos X="9" Y="17"/>
-        <UsageCount Value="20"/>
+        <CursorPos X="12" Y="8"/>
+        <UsageCount Value="42"/>
         <Loaded Value="True"/>
       </Unit0>
       <Unit1>
         <Filename Value="wlxplugin.pas"/>
         <UnitName Value="WLXPlugin"/>
-        <EditorIndex Value="1"/>
-        <TopLine Value="10"/>
-        <UsageCount Value="10"/>
+        <EditorIndex Value="4"/>
+        <CursorPos X="71" Y="91"/>
+        <UsageCount Value="21"/>
         <Loaded Value="True"/>
       </Unit1>
+      <Unit2>
+        <Filename Value="../DWGPreview/dwgThumbnail.pas"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="12"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="../DWGPreview/listplug.pas"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="16"/>
+        <UsageCount Value="13"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="../DWGPreview/uMain.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="134"/>
+        <CursorPos X="43" Y="80"/>
+        <UsageCount Value="13"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="../../../../../../fpc/trunk/rtl/wince/messages.pp"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="5" Y="11"/>
+        <UsageCount Value="10"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="../FileThumbnails/FileDesc/ContPlug.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="37"/>
+        <UsageCount Value="9"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="../FileThumbnails/FileDesc/DEPHeader.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="94"/>
+        <CursorPos X="20"/>
+        <UsageCount Value="9"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="../redhtml/Src/HttpAsyncId10.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="58"/>
+        <UsageCount Value="9"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="../redhtml/Src/HtmlThreads.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="66"/>
+        <UsageCount Value="9"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="../TorrentLister/TorrentFile.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="353"/>
+        <UsageCount Value="13"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="../TorrentLister/install/readme.txt"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="43" Y="14"/>
+        <UsageCount Value="13"/>
+        <DefaultSyntaxHighlighter Value="None"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="calling.inc"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="17" Y="3"/>
+        <UsageCount Value="12"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="../TorrentLister/listU.pas"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="19" Y="238"/>
+        <UsageCount Value="10"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="../../components/prichedit/oodocument.pas"/>
+        <UnitName Value="oodocument"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="52"/>
+        <CursorPos X="10" Y="118"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="../../components/prichedit/fprichdocument.pas"/>
+        <UnitName Value="fprichdocument"/>
+        <EditorIndex Value="1"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="../../components/prichedit/richdocument.pas"/>
+        <UnitName Value="richdocument"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="24"/>
+        <CursorPos X="3" Y="54"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit16>
     </Units>
-    <JumpHistory Count="1">
+    <JumpHistory Count="14" HistoryIndex="13">
       <Position1>
         <Filename Value="oofile.lpr"/>
         <Caret Line="17" Column="9"/>
       </Position1>
+      <Position2>
+        <Filename Value="oofile.lpr"/>
+        <Caret Line="123" Column="14" TopLine="98"/>
+      </Position2>
+      <Position3>
+        <Filename Value="oofile.lpr"/>
+        <Caret Line="11" Column="7"/>
+      </Position3>
+      <Position4>
+        <Filename Value="oofile.lpr"/>
+        <Caret Line="4" Column="15"/>
+      </Position4>
+      <Position5>
+        <Filename Value="oofile.lpr"/>
+        <Caret Line="11" Column="74"/>
+      </Position5>
+      <Position6>
+        <Filename Value="oofile.lpr"/>
+        <Caret Line="21" Column="5"/>
+      </Position6>
+      <Position7>
+        <Filename Value="oofile.lpr"/>
+        <Caret Line="25" Column="23"/>
+      </Position7>
+      <Position8>
+        <Filename Value="oofile.lpr"/>
+        <Caret Line="20" Column="49"/>
+      </Position8>
+      <Position9>
+        <Filename Value="oofile.lpr"/>
+        <Caret Line="9" Column="20"/>
+      </Position9>
+      <Position10>
+        <Filename Value="../../components/prichedit/oodocument.pas"/>
+        <Caret Line="15" Column="33"/>
+      </Position10>
+      <Position11>
+        <Filename Value="oofile.lpr"/>
+        <Caret Line="24" Column="8"/>
+      </Position11>
+      <Position12>
+        <Filename Value="oofile.lpr"/>
+        <Caret Line="9" Column="20"/>
+      </Position12>
+      <Position13>
+        <Filename Value="oofile.lpr"/>
+        <Caret Line="8" Column="21"/>
+      </Position13>
+      <Position14>
+        <Filename Value="oofile.lpr"/>
+        <Caret Line="20" Column="69"/>
+      </Position14>
     </JumpHistory>
   </ProjectSession>
 </CONFIG>

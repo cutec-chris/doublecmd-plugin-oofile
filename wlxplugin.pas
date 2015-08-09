@@ -61,24 +61,39 @@ type ttimeformat=record
 
 type HBITMAP = type LongWord;
 
+ { Function prototypes: Functions need to be defined exactly like this!}
 
-{ Function prototypes: Functions need to be defined exactly like this!}
-{
-function ListLoad(ParentWin:thandle;FileToLoad:pchar;ShowFlags:integer):thandle; stdcall;
-function ListLoadNext(ParentWin,PluginWin:thandle;FileToLoad:pchar;ShowFlags:integer):integer; stdcall;
-procedure ListCloseWindow(ListWin:thandle); stdcall;
-procedure ListGetDetectString(DetectString:pchar;maxlen:integer); stdcall;
-function ListSearchText(ListWin:thandle;SearchString:pchar;
-                        SearchParameter:integer):integer; stdcall;
-function ListSearchDialog(ListWin:thandle;FindNext:integer):integer; stdcall;
-function ListSendCommand(ListWin:thandle;Command,Parameter:integer):integer; stdcall;
-function ListPrint(ListWin:thandle;FileToPrint,DefPrinter:pchar;
-                   PrintFlags:integer;var Margins:trect):integer; stdcall;
-function ListNotificationReceived(ListWin:thandle;Message,wParam,lParam:integer):integer; stdcall;
-procedure ListSetDefaultParams(dps:pListDefaultParamStruct); stdcall;
-function ListGetPreviewBitmap(FileToLoad:pchar;width,height:integer;
-    contentbuf:pchar;contentbuflen:integer):hbitmap; stdcall;
-}
+ {
+ function ListLoad(ParentWin:thandle;FileToLoad:pchar;ShowFlags:integer):thandle; dcpcall;
+ function ListLoadW(ParentWin:thandle;FileToLoad:pwidechar;ShowFlags:integer):thandle; dcpcall;
+ function ListLoadNext(ParentWin,PluginWin:thandle;FileToLoad:pchar;ShowFlags:integer):integer; dcpcall;
+ function ListLoadNextW(ParentWin,PluginWin:thandle;FileToLoad:pwidechar;ShowFlags:integer):integer; dcpcall;
+ procedure ListCloseWindow(ListWin:thandle); dcpcall;
+ procedure ListGetDetectString(DetectString:pchar;maxlen:integer); dcpcall;
+ function ListSearchText(ListWin:thandle;SearchString:pchar;
+                         SearchParameter:integer):integer; dcpcall;
+ function ListSearchTextW(ListWin:thandle;SearchString:pwidechar;
+                         SearchParameter:integer):integer; dcpcall;
+ function ListGetText(FileToLoad:pchar;contentbuf:pchar;contentbuflen:integer):pchar; dcpcall;
+ function ListGetTextW(FileToLoad:pchar;contentbuf:pchar;contentbuflen:integer):pchar; dcpcall;
+ function ListSearchDialog(ListWin:thandle;FindNext:integer):integer; dcpcall;
+ function ListSendCommand(ListWin:thandle;Command,Parameter:integer):integer; dcpcall;
+ function ListPrint(ListWin:thandle;FileToPrint,DefPrinter:pchar;
+                    PrintFlags:integer;var Margins:trect):integer; dcpcall;
+ function ListPrintW(ListWin:thandle;FileToPrint,DefPrinter:pwidechar;
+                    PrintFlags:integer;var Margins:trect):integer; dcpcall;
+ function ListNotificationReceived(ListWin:thandle;Message,wParam,lParam:integer):integer; dcpcall;
+ procedure ListSetDefaultParams(dps:pListDefaultParamStruct); dcpcall;
+ function ListGetPreviewBitmap(FileToLoad:pchar;width,height:integer;
+     contentbuf:pchar;contentbuflen:integer):hbitmap; dcpcall;
+ function ListGetPreviewBitmapFile(FileToLoad:pchar;width,height:integer;
+     contentbuf:pchar;contentbuflen:integer):pchar; dcpcall;
+ function ListGetPreviewBitmapW(FileToLoad:pwidechar;OutputPath:pchar;width,height:integer;
+     contentbuf:pchar;contentbuflen:integer):hbitmap; dcpcall;
+ function ListGetPreviewBitmapFileW(FileToLoad:pwidechar;OutputPath:pwidechar;width,height:integer;
+     contentbuf:pchar;contentbuflen:integer):pchar; dcpcall;
+ }
+
 
 implementation
 

@@ -30,22 +30,26 @@
         <LaunchingApplication PathPlusParams="/usr/X11R6/bin/xterm -T 'Lazarus Run Output' -e $(LazarusDir)/tools/runwait.sh $(TargetCmdLine)"/>
       </local>
     </RunParams>
+    <RequiredPackages Count="1">
+      <Item1>
+        <PackageName Value="fprichdocument"/>
+      </Item1>
+    </RequiredPackages>
     <Units Count="1">
       <Unit0>
         <Filename Value="oofile.lpr"/>
         <IsPartOfProject Value="True"/>
-        <UnitName Value="oofile"/>
       </Unit0>
     </Units>
   </ProjectOptions>
   <CompilerOptions>
     <Version Value="11"/>
     <Target>
-      <Filename Value="../lib/oofile" ApplyConventions="False"/>
+      <Filename Value="../../../output/$(TargetCPU)-$(TargetOS)/plugins/oofile.wxf" ApplyConventions="False"/>
     </Target>
     <SearchPaths>
       <IncludeFiles Value="../../../../sdk"/>
-      <UnitOutputDirectory Value="../lib"/>
+      <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)"/>
     </SearchPaths>
     <Conditionals Value="if (TargetCPU &lt;> 'arm') then
 begin
@@ -62,6 +66,9 @@ end;"/>
       </SyntaxOptions>
     </Parsing>
     <Linking>
+      <Debugging>
+        <UseExternalDbgSyms Value="True"/>
+      </Debugging>
       <LinkSmart Value="True"/>
       <Options>
         <PassLinkerOptions Value="True"/>
