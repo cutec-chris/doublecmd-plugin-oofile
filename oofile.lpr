@@ -18,7 +18,7 @@ begin
 end;
 
 function ListGetPreviewBitmapFile(FileToLoad:pchar;OutputPath:pchar;width,height:integer;
-    contentbuf:pchar;contentbuflen:integer):hbitmap; dcpcall;
+    contentbuf:pchar;contentbuflen:integer):pchar; dcpcall;
 var
   aDoc: TODFDocument;
 begin
