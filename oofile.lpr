@@ -14,7 +14,14 @@ begin
 end;
 
 function ListGetText(FileToLoad:pchar;contentbuf:pchar;contentbuflen:integer):pchar; dcpcall;
+var
+  aDoc: TODFDocument;
 begin
+  aDoc := TODFDocument.Create;
+  aDoc.FileName:=FileToLoad;
+  aDoc.Open;
+  Result := PChar(aDoc.AsString);
+  aDoc.Free;
 end;
 
 function ListGetPreviewBitmapFile(FileToLoad:pchar;OutputPath:pchar;width,height:integer;
@@ -25,7 +32,8 @@ begin
   aDoc := TODFDocument.Create;
   aDoc.FileName:=FileToLoad;
   aDoc.Open;
-
+  if aDoc.ExtractFile('thumbnail.png',OutputPath) then
+    Result := PChar(OutputPath+'thumbnail.png');
   aDoc.Free;
 end;
 

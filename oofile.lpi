@@ -33,6 +33,7 @@
     <RequiredPackages Count="1">
       <Item1>
         <PackageName Value="fprichdocument"/>
+        <DefaultFilename Value="../../components/OpenRichedit/fprichdocument.lpk"/>
       </Item1>
     </RequiredPackages>
     <Units Count="1">
