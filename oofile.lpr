@@ -4,13 +4,12 @@ library oofile;
 {$include calling.inc}
 
 uses
-  Classes,
-  sysutils,
-  WLXPlugin, fprichdocument,oodocument, laz_fpspreadsheet,fpolestorage,uminiconvencoding;
+  Classes, sysutils, WLXPlugin, fprichdocument, oodocument, laz_fpspreadsheet,
+  fpolestorage, uminiconvencoding, general_nogui, Utils;
 
 procedure ListGetDetectString(DetectString:pchar;maxlen:integer); dcpcall;
 begin
-  StrCopy(DetectString, 'EXT="ODT"|EXT="DOC"|EXT="TXT"|EXT="ME"|EXT="LST"');
+  StrCopy(DetectString, 'EXT="ODG"|EXT="ODT"|EXT="DOC"|EXT="TXT"|EXT="ME"|EXT="LST"');
 end;
 
 function StripUnwantedChar(Text: string):string;
@@ -108,11 +107,12 @@ function ListGetPreviewBitmapFile(FileToLoad:pchar;OutputPath:pchar;width,height
 var
   aDoc: TODFDocument;
 begin
+  Result := '';
   aDoc := TODFDocument.Create;
   aDoc.FileName:=FileToLoad;
   aDoc.Open;
-  //if aDoc.ExtractFile('thumbnail.png',OutputPath) then
-  //  Result := PChar(OutputPath+'thumbnail.png');
+  if aDoc.ExtractFile('Thumbnails/thumbnail.png',OutputPath) then
+    Result := PChar(OutputPath+'Thumbnails'+DirectorySeparator+'thumbnail.png');
   aDoc.Free;
 end;
 
