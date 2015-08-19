@@ -99,7 +99,8 @@ begin
         begin
           Result := PChar(aText.Text);
         end;
-    end
+    end;
+  aText.Free;
 end;
 
 function ListGetPreviewBitmapFile(FileToLoad:pchar;OutputPath:pchar;width,height:integer;
