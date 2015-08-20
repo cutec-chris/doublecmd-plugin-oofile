@@ -9,7 +9,7 @@ uses
 
 procedure ListGetDetectString(DetectString:pchar;maxlen:integer); dcpcall;
 begin
-  StrCopy(DetectString, 'EXT="ODG"|EXT="ODT"|EXT="DOC"|EXT="TXT"|EXT="ME"|EXT="LST"');
+  StrCopy(DetectString, 'EXT="ODG"|EXT="ODT"|EXT="ODS"|EXT="DOC"|EXT="TXT"|EXT="ME"|EXT="LST"|EXT="FCSTD"');
 end;
 
 function StripUnwantedChar(Text: string):string;
