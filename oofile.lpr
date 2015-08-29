@@ -76,7 +76,7 @@ begin
             GetWordText(aFile,bText);
             aText.Text:=bText;
           end;
-       '.odt':
+       '.odt','.ods':
            begin
              aDoc := TODFDocument.Create;
              aDoc.FileName:=FileToLoad;
@@ -109,12 +109,20 @@ var
   aDoc: TODFDocument;
 begin
   Result := '';
-  aDoc := TODFDocument.Create;
-  aDoc.FileName:=FileToLoad;
-  aDoc.Open;
-  if aDoc.ExtractFile('Thumbnails/thumbnail.png',OutputPath) then
-    Result := PChar(OutputPath+'Thumbnails'+DirectorySeparator+'thumbnail.png');
-  aDoc.Free;
+  case lowercase(ExtractFileExt(FileToLoad)) of
+   '.odt','.ods':
+     begin
+       aDoc := TODFDocument.Create;
+       try
+         aDoc.FileName:=FileToLoad;
+         aDoc.Open;
+         if aDoc.ExtractFile('Thumbnails/thumbnail.png',OutputPath) then
+           Result := PChar(OutputPath+'Thumbnails'+DirectorySeparator+'thumbnail.png');
+         aDoc.Free;
+       except
+       end;
+     end;
+  end;
 end;
 
 exports

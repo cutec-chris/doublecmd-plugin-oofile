@@ -7,7 +7,8 @@
         <Filename Value="oofile.lpr"/>
         <IsPartOfProject Value="True"/>
         <IsVisibleTab Value="True"/>
-        <CursorPos X="105" Y="12"/>
+        <TopLine Value="97"/>
+        <CursorPos X="43" Y="112"/>
         <UsageCount Value="46"/>
         <Loaded Value="True"/>
       </Unit0>
@@ -191,7 +192,7 @@
         <UsageCount Value="10"/>
       </Unit26>
     </Units>
-    <JumpHistory Count="29" HistoryIndex="28">
+    <JumpHistory Count="30" HistoryIndex="29">
       <Position1>
         <Filename Value="oofile.lpr"/>
         <Caret Line="117" TopLine="58"/>
@@ -308,18 +309,13 @@
         <Filename Value="oofile.lpr"/>
         <Caret Line="103" Column="14" TopLine="84"/>
       </Position29>
+      <Position30>
+        <Filename Value="oofile.lpr"/>
+        <Caret Line="121" Column="10" TopLine="96"/>
+      </Position30>
     </JumpHistory>
   </ProjectSession>
   <Debugging>
-    <BreakPoints Count="1">
-      <Item1>
-        <Kind Value="bpkSource"/>
-        <WatchScope Value="wpsLocal"/>
-        <WatchKind Value="wpkWrite"/>
-        <Source Value="oofile.lpr"/>
-        <Line Value="115"/>
-      </Item1>
-    </BreakPoints>
     <Watches Count="2">
       <Item1>
         <Expression Value="FFilename"/>
