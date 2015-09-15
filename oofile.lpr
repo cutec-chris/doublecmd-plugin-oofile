@@ -67,9 +67,9 @@ var
   i: Integer;
 begin
   aFile := FileToLoad;
+  aText := TStringList.Create;
   if FileExists(aFile) then
     begin
-      aText := TStringList.Create;
       case lowercase(ExtractFileExt(aFile)) of
       '.doc':
           begin
