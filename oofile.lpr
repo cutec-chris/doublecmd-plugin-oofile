@@ -110,7 +110,7 @@ var
 begin
   Result := '';
   case lowercase(ExtractFileExt(FileToLoad)) of
-   '.odt','.ods':
+   '.odt','.ods','.odg','.fcstd':
      begin
        aDoc := TODFDocument.Create;
        try
