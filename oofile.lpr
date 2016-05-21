@@ -4,7 +4,7 @@ library oofile;
 {$include calling.inc}
 
 uses
-  Classes, sysutils, WLXPlugin, fprichdocument, oodocument, laz_fpspreadsheet,
+  Classes, sysutils, WLXPlugin, oodocument, laz_fpspreadsheet,
   fpolestorage, uminiconvencoding, general_nogui, Utils;
 
 procedure ListGetDetectString(DetectString:pchar;maxlen:integer); dcpcall;
