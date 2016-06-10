@@ -6,196 +6,20 @@
       <Unit0>
         <Filename Value="oofile.lpr"/>
         <IsPartOfProject Value="True"/>
-        <TopLine Value="92"/>
-        <CursorPos X="12" Y="109"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="98"/>
+        <CursorPos X="22" Y="119"/>
         <UsageCount Value="46"/>
-        <Loaded Value="True"/>
       </Unit0>
       <Unit1>
-        <Filename Value="wlxplugin.pas"/>
-        <UnitName Value="WLXPlugin"/>
-        <EditorIndex Value="4"/>
-        <CursorPos X="71" Y="91"/>
-        <UsageCount Value="22"/>
-        <Loaded Value="True"/>
-      </Unit1>
-      <Unit2>
-        <Filename Value="../DWGPreview/dwgThumbnail.pas"/>
-        <EditorIndex Value="-1"/>
-        <UsageCount Value="12"/>
-      </Unit2>
-      <Unit3>
-        <Filename Value="../DWGPreview/listplug.pas"/>
-        <EditorIndex Value="-1"/>
-        <CursorPos X="16"/>
-        <UsageCount Value="13"/>
-      </Unit3>
-      <Unit4>
-        <Filename Value="../DWGPreview/uMain.pas"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="134"/>
-        <CursorPos X="43" Y="80"/>
-        <UsageCount Value="13"/>
-      </Unit4>
-      <Unit5>
-        <Filename Value="../../../../../../fpc/trunk/rtl/wince/messages.pp"/>
-        <EditorIndex Value="-1"/>
-        <CursorPos X="5" Y="11"/>
-        <UsageCount Value="10"/>
-      </Unit5>
-      <Unit6>
-        <Filename Value="../FileThumbnails/FileDesc/ContPlug.pas"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="37"/>
-        <UsageCount Value="9"/>
-      </Unit6>
-      <Unit7>
-        <Filename Value="../FileThumbnails/FileDesc/DEPHeader.pas"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="94"/>
-        <CursorPos X="20"/>
-        <UsageCount Value="9"/>
-      </Unit7>
-      <Unit8>
-        <Filename Value="../redhtml/Src/HttpAsyncId10.pas"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="58"/>
-        <UsageCount Value="9"/>
-      </Unit8>
-      <Unit9>
-        <Filename Value="../redhtml/Src/HtmlThreads.pas"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="66"/>
-        <UsageCount Value="9"/>
-      </Unit9>
-      <Unit10>
-        <Filename Value="../TorrentLister/TorrentFile.pas"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="353"/>
-        <UsageCount Value="13"/>
-      </Unit10>
-      <Unit11>
-        <Filename Value="../TorrentLister/install/readme.txt"/>
-        <EditorIndex Value="-1"/>
-        <CursorPos X="43" Y="14"/>
-        <UsageCount Value="13"/>
-        <DefaultSyntaxHighlighter Value="None"/>
-      </Unit11>
-      <Unit12>
-        <Filename Value="calling.inc"/>
-        <EditorIndex Value="-1"/>
-        <CursorPos X="17" Y="3"/>
-        <UsageCount Value="12"/>
-      </Unit12>
-      <Unit13>
-        <Filename Value="../TorrentLister/listU.pas"/>
-        <EditorIndex Value="-1"/>
-        <CursorPos X="19" Y="238"/>
-        <UsageCount Value="10"/>
-      </Unit13>
-      <Unit14>
-        <Filename Value="../../components/prichedit/oodocument.pas"/>
-        <EditorIndex Value="-1"/>
-        <CursorPos X="31" Y="15"/>
-        <UsageCount Value="10"/>
-      </Unit14>
-      <Unit15>
-        <Filename Value="../../components/prichedit/fprichdocument.pas"/>
-        <EditorIndex Value="-1"/>
-        <UsageCount Value="10"/>
-      </Unit15>
-      <Unit16>
-        <Filename Value="../../components/prichedit/richdocument.pas"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="35"/>
-        <CursorPos X="3" Y="54"/>
-        <UsageCount Value="10"/>
-      </Unit16>
-      <Unit17>
-        <Filename Value="../../components/OpenRichedit/oodocument.pas"/>
-        <EditorIndex Value="-1"/>
-        <CursorPos X="36" Y="15"/>
-        <UsageCount Value="11"/>
-      </Unit17>
-      <Unit18>
-        <Filename Value="../../components/OpenRichedit/richdocument.pas"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="86"/>
-        <CursorPos Y="113"/>
-        <UsageCount Value="11"/>
-      </Unit18>
-      <Unit19>
-        <Filename Value="../../../../../../Programme/lazarus140/fpc/2.6.4/source/rtl/objpas/classes/classesh.inc"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="619"/>
-        <CursorPos X="14" Y="652"/>
-        <UsageCount Value="10"/>
-      </Unit19>
-      <Unit20>
-        <Filename Value="../msoffice/msoffice.lpr"/>
-        <EditorIndex Value="-1"/>
-        <CursorPos X="52" Y="10"/>
-        <UsageCount Value="10"/>
-      </Unit20>
-      <Unit21>
-        <Filename Value="../../../../../../Programme/lazarus140/fpc/2.6.4/source/packages/paszlib/src/zipper.pp"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="412"/>
-        <CursorPos X="15" Y="430"/>
-        <UsageCount Value="10"/>
-      </Unit21>
-      <Unit22>
-        <Filename Value="../../../../../../Programme/lazarus140/fpc/2.6.4/source/packages/fcl-xml/src/dom.pp"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="490"/>
-        <CursorPos X="3" Y="509"/>
-        <UsageCount Value="10"/>
-      </Unit22>
-      <Unit23>
-        <Filename Value="../../../../../../Programme/lazarus140/fpc/2.6.4/source/packages/fcl-xml/src/xmlread.pp"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="3919"/>
-        <CursorPos X="11" Y="3848"/>
-        <UsageCount Value="10"/>
-      </Unit23>
-      <Unit24>
-        <Filename Value="../../base/dbintfs/uwlxmodule.pas"/>
-        <UnitName Value="uWlxModule"/>
-        <EditorIndex Value="2"/>
-        <TopLine Value="457"/>
-        <CursorPos Y="465"/>
-        <UsageCount Value="10"/>
-        <Loaded Value="True"/>
-      </Unit24>
-      <Unit25>
-        <Filename Value="../plugintester/umain.pas"/>
-        <ComponentName Value="Form1"/>
-        <HasResources Value="True"/>
-        <ResourceBaseClass Value="Form"/>
-        <EditorIndex Value="3"/>
-        <TopLine Value="22"/>
-        <CursorPos X="48" Y="62"/>
-        <UsageCount Value="10"/>
-        <Loaded Value="True"/>
-      </Unit25>
-      <Unit26>
-        <Filename Value="../../../../../../Programme/lazarus140/fpc/2.6.4/source/rtl/morphos/graphics.pas"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="2180"/>
-        <CursorPos X="40" Y="2199"/>
-        <UsageCount Value="10"/>
-      </Unit26>
-      <Unit27>
         <Filename Value="oodocument.pas"/>
         <IsPartOfProject Value="True"/>
-        <IsVisibleTab Value="True"/>
-        <EditorIndex Value="1"/>
-        <TopLine Value="133"/>
-        <CursorPos X="3" Y="15"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="3"/>
+        <CursorPos Y="25"/>
         <UsageCount Value="20"/>
-        <Loaded Value="True"/>
-      </Unit27>
-      <Unit28>
+      </Unit1>
+      <Unit2>
         <Filename Value="richdocument.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
@@ -203,110 +27,183 @@
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
         <UsageCount Value="20"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="wlxplugin.pas"/>
+        <UnitName Value="WLXPlugin"/>
+        <EditorIndex Value="2"/>
+        <CursorPos X="71" Y="91"/>
+        <UsageCount Value="22"/>
+        <Loaded Value="True"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="../DWGPreview/dwgThumbnail.pas"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="12"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="../DWGPreview/listplug.pas"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="16"/>
+        <UsageCount Value="13"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="../DWGPreview/uMain.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="134"/>
+        <CursorPos X="43" Y="80"/>
+        <UsageCount Value="13"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="../../../../../../fpc/trunk/rtl/wince/messages.pp"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="5" Y="11"/>
+        <UsageCount Value="10"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="../FileThumbnails/FileDesc/ContPlug.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="37"/>
+        <UsageCount Value="9"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="../FileThumbnails/FileDesc/DEPHeader.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="94"/>
+        <CursorPos X="20"/>
+        <UsageCount Value="9"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="../redhtml/Src/HttpAsyncId10.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="58"/>
+        <UsageCount Value="9"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="../redhtml/Src/HtmlThreads.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="66"/>
+        <UsageCount Value="9"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="../TorrentLister/TorrentFile.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="353"/>
+        <UsageCount Value="13"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="../TorrentLister/install/readme.txt"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="43" Y="14"/>
+        <UsageCount Value="13"/>
+        <DefaultSyntaxHighlighter Value="None"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="calling.inc"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="17" Y="3"/>
+        <UsageCount Value="12"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="../TorrentLister/listU.pas"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="19" Y="238"/>
+        <UsageCount Value="10"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="../../components/prichedit/oodocument.pas"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="31" Y="15"/>
+        <UsageCount Value="10"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="../../components/prichedit/fprichdocument.pas"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="10"/>
+      </Unit17>
+      <Unit18>
+        <Filename Value="../../components/prichedit/richdocument.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="35"/>
+        <CursorPos X="3" Y="54"/>
+        <UsageCount Value="10"/>
+      </Unit18>
+      <Unit19>
+        <Filename Value="../../components/OpenRichedit/oodocument.pas"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="36" Y="15"/>
+        <UsageCount Value="11"/>
+      </Unit19>
+      <Unit20>
+        <Filename Value="../../components/OpenRichedit/richdocument.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="86"/>
+        <CursorPos Y="113"/>
+        <UsageCount Value="11"/>
+      </Unit20>
+      <Unit21>
+        <Filename Value="../../../../../../Programme/lazarus140/fpc/2.6.4/source/rtl/objpas/classes/classesh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="619"/>
+        <CursorPos X="14" Y="652"/>
+        <UsageCount Value="10"/>
+      </Unit21>
+      <Unit22>
+        <Filename Value="../msoffice/msoffice.lpr"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="52" Y="10"/>
+        <UsageCount Value="10"/>
+      </Unit22>
+      <Unit23>
+        <Filename Value="../../../../../../Programme/lazarus140/fpc/2.6.4/source/packages/paszlib/src/zipper.pp"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="412"/>
+        <CursorPos X="15" Y="430"/>
+        <UsageCount Value="10"/>
+      </Unit23>
+      <Unit24>
+        <Filename Value="../../../../../../Programme/lazarus140/fpc/2.6.4/source/packages/fcl-xml/src/dom.pp"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="490"/>
+        <CursorPos X="3" Y="509"/>
+        <UsageCount Value="10"/>
+      </Unit24>
+      <Unit25>
+        <Filename Value="../../../../../../Programme/lazarus140/fpc/2.6.4/source/packages/fcl-xml/src/xmlread.pp"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="3919"/>
+        <CursorPos X="11" Y="3848"/>
+        <UsageCount Value="10"/>
+      </Unit25>
+      <Unit26>
+        <Filename Value="../../base/dbintfs/uwlxmodule.pas"/>
+        <UnitName Value="uWlxModule"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="457"/>
+        <CursorPos Y="465"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit26>
+      <Unit27>
+        <Filename Value="../plugintester/umain.pas"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="22"/>
+        <CursorPos X="48" Y="62"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit27>
+      <Unit28>
+        <Filename Value="../../../../../../Programme/lazarus140/fpc/2.6.4/source/rtl/morphos/graphics.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="2180"/>
+        <CursorPos X="40" Y="2199"/>
+        <UsageCount Value="10"/>
       </Unit28>
     </Units>
-    <JumpHistory Count="25" HistoryIndex="24">
-      <Position1>
-        <Filename Value="oofile.lpr"/>
-        <Caret Line="117" TopLine="58"/>
-      </Position1>
-      <Position2>
-        <Filename Value="oofile.lpr"/>
-        <Caret Line="70" TopLine="58"/>
-      </Position2>
-      <Position3>
-        <Filename Value="oofile.lpr"/>
-        <Caret Line="72" TopLine="58"/>
-      </Position3>
-      <Position4>
-        <Filename Value="oofile.lpr"/>
-        <Caret Line="73" TopLine="58"/>
-      </Position4>
-      <Position5>
-        <Filename Value="oofile.lpr"/>
-        <Caret Line="81" TopLine="58"/>
-      </Position5>
-      <Position6>
-        <Filename Value="oofile.lpr"/>
-        <Caret Line="82" TopLine="58"/>
-      </Position6>
-      <Position7>
-        <Filename Value="oofile.lpr"/>
-        <Caret Line="83" TopLine="58"/>
-      </Position7>
-      <Position8>
-        <Filename Value="oofile.lpr"/>
-        <Caret Line="84" TopLine="59"/>
-      </Position8>
-      <Position9>
-        <Filename Value="oofile.lpr"/>
-        <Caret Line="74" Column="78" TopLine="60"/>
-      </Position9>
-      <Position10>
-        <Filename Value="oofile.lpr"/>
-        <Caret Line="98" TopLine="84"/>
-      </Position10>
-      <Position11>
-        <Filename Value="oofile.lpr"/>
-        <Caret Line="100" TopLine="84"/>
-      </Position11>
-      <Position12>
-        <Filename Value="oofile.lpr"/>
-        <Caret Line="103" Column="14" TopLine="84"/>
-      </Position12>
-      <Position13>
-        <Filename Value="oofile.lpr"/>
-        <Caret Line="121" Column="10" TopLine="96"/>
-      </Position13>
-      <Position14>
-        <Filename Value="oofile.lpr"/>
-        <Caret Line="70"/>
-      </Position14>
-      <Position15>
-        <Filename Value="oofile.lpr"/>
-        <Caret Line="7" Column="46"/>
-      </Position15>
-      <Position16>
-        <Filename Value="oofile.lpr"/>
-        <Caret Line="87" Column="15" TopLine="61"/>
-      </Position16>
-      <Position17>
-        <Filename Value="oofile.lpr"/>
-        <Caret Line="125" Column="11" TopLine="100"/>
-      </Position17>
-      <Position18>
-        <Filename Value="oofile.lpr"/>
-        <Caret Line="124" TopLine="101"/>
-      </Position18>
-      <Position19>
-        <Filename Value="oofile.lpr"/>
-        <Caret Line="109" Column="12" TopLine="101"/>
-      </Position19>
-      <Position20>
-        <Filename Value="oodocument.pas"/>
-        <Caret Line="20" Column="18" TopLine="13"/>
-      </Position20>
-      <Position21>
-        <Filename Value="oofile.lpr"/>
-        <Caret Line="109" Column="12" TopLine="101"/>
-      </Position21>
-      <Position22>
-        <Filename Value="oodocument.pas"/>
-        <Caret Line="141" Column="25" TopLine="133"/>
-      </Position22>
-      <Position23>
-        <Filename Value="oofile.lpr"/>
-        <Caret Line="123" Column="27" TopLine="101"/>
-      </Position23>
-      <Position24>
-        <Filename Value="oofile.lpr"/>
-        <Caret Line="119" Column="16" TopLine="101"/>
-      </Position24>
-      <Position25>
-        <Filename Value="oofile.lpr"/>
-        <Caret Line="109" Column="12" TopLine="92"/>
-      </Position25>
-    </JumpHistory>
+    <JumpHistory HistoryIndex="-1"/>
   </ProjectSession>
   <Debugging>
     <Watches Count="2">

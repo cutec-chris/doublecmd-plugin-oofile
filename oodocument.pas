@@ -21,6 +21,7 @@ type
     procedure ReadMasterStyles(AStylesNode: TDOMNode);
   public
     procedure Open; override;
+    function ExtractFile(aFileName,OutputPath : string) : Boolean;
   end;
 
 implementation
@@ -40,6 +41,23 @@ end;
 procedure TODFDocument.ReadMasterStyles(AStylesNode: TDOMNode);
 begin
 
+end;
+
+function TODFDocument.ExtractFile(aFileName, OutputPath: string): Boolean;
+var
+  UnZip: TUnZipper;
+  FileList: TStringList;
+begin
+  UnZip := TUnZipper.Create;
+  FileList := TStringList.Create;
+  try
+    FileList.Add(aFileName);
+    UnZip.OutputPath := OutputPath;
+    Unzip.UnZipFiles(FileName,FileList);
+  finally
+    FreeAndNil(FileList);
+    FreeAndNil(UnZip);
+  end; //try
 end;
 
 function GetAttrValue(ANode : TDOMNode; AAttrName : string) : string;
