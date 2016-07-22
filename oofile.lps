@@ -6,18 +6,21 @@
       <Unit0>
         <Filename Value="oofile.lpr"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="98"/>
-        <CursorPos X="22" Y="119"/>
-        <UsageCount Value="46"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="69"/>
+        <CursorPos X="4" Y="119"/>
+        <FoldState Value=" T6jL01p"/>
+        <UsageCount Value="48"/>
+        <Loaded Value="True"/>
       </Unit0>
       <Unit1>
         <Filename Value="oodocument.pas"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="3"/>
-        <CursorPos Y="25"/>
-        <UsageCount Value="20"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="150"/>
+        <CursorPos X="104" Y="55"/>
+        <UsageCount Value="22"/>
+        <Loaded Value="True"/>
       </Unit1>
       <Unit2>
         <Filename Value="richdocument.pas"/>
@@ -26,15 +29,14 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="20"/>
+        <UsageCount Value="22"/>
       </Unit2>
       <Unit3>
         <Filename Value="wlxplugin.pas"/>
         <UnitName Value="WLXPlugin"/>
-        <EditorIndex Value="2"/>
+        <EditorIndex Value="-1"/>
         <CursorPos X="71" Y="91"/>
         <UsageCount Value="22"/>
-        <Loaded Value="True"/>
       </Unit3>
       <Unit4>
         <Filename Value="../DWGPreview/dwgThumbnail.pas"/>
@@ -178,22 +180,20 @@
       <Unit26>
         <Filename Value="../../base/dbintfs/uwlxmodule.pas"/>
         <UnitName Value="uWlxModule"/>
-        <IsVisibleTab Value="True"/>
-        <TopLine Value="457"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="523"/>
         <CursorPos Y="465"/>
         <UsageCount Value="10"/>
-        <Loaded Value="True"/>
       </Unit26>
       <Unit27>
         <Filename Value="../plugintester/umain.pas"/>
         <ComponentName Value="Form1"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <EditorIndex Value="1"/>
-        <TopLine Value="22"/>
-        <CursorPos X="48" Y="62"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="73"/>
+        <CursorPos X="97" Y="56"/>
         <UsageCount Value="10"/>
-        <Loaded Value="True"/>
       </Unit27>
       <Unit28>
         <Filename Value="../../../../../../Programme/lazarus140/fpc/2.6.4/source/rtl/morphos/graphics.pas"/>
@@ -203,7 +203,16 @@
         <UsageCount Value="10"/>
       </Unit28>
     </Units>
-    <JumpHistory HistoryIndex="-1"/>
+    <JumpHistory Count="2" HistoryIndex="1">
+      <Position1>
+        <Filename Value="oofile.lpr"/>
+        <Caret Line="119" Column="24" TopLine="97"/>
+      </Position1>
+      <Position2>
+        <Filename Value="oofile.lpr"/>
+        <Caret Line="123" Column="75" TopLine="94"/>
+      </Position2>
+    </JumpHistory>
   </ProjectSession>
   <Debugging>
     <Watches Count="2">

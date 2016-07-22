@@ -48,12 +48,14 @@ var
   UnZip: TUnZipper;
   FileList: TStringList;
 begin
+  Result := True;
   UnZip := TUnZipper.Create;
   FileList := TStringList.Create;
   try
     FileList.Add(aFileName);
     UnZip.OutputPath := OutputPath;
     Unzip.UnZipFiles(FileName,FileList);
+    Result := FileExists(AppendPathDelim(OutputPath)+aFileName);
   finally
     FreeAndNil(FileList);
     FreeAndNil(UnZip);

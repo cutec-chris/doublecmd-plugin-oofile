@@ -117,7 +117,9 @@ begin
          aDoc.FileName:=FileToLoad;
          aDoc.Open;
          if aDoc.ExtractFile('Thumbnails/thumbnail.png',OutputPath) then
-           Result := PChar(OutputPath+'Thumbnails'+DirectorySeparator+'thumbnail.png');
+           Result := PChar(OutputPath+'Thumbnails'+DirectorySeparator+'thumbnail.png')
+         else if aDoc.ExtractFile('thumbnails/Thumbnail.png',OutputPath) then
+             Result := PChar(OutputPath+'thumbnails'+DirectorySeparator+'Thumbnail.png');
          aDoc.Free;
        except
        end;
