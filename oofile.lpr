@@ -9,7 +9,7 @@ uses
 
 procedure ListGetDetectString(DetectString:pchar;maxlen:integer); dcpcall;
 begin
-  StrCopy(DetectString, 'EXT="ODG"|EXT="ODT"|EXT="ODS"|EXT="DOC"|EXT="TXT"|EXT="ME"|EXT="LST"|EXT="FCSTD"');
+  StrCopy(DetectString, 'EXT="ODG"|EXT="ODT"|EXT="ODS"|EXT="ODP"|EXT="DOC"|EXT="TXT"|EXT="ME"|EXT="LST"|EXT="FCSTD"');
 end;
 
 function StripUnwantedChar(Text: string):string;
@@ -76,7 +76,7 @@ begin
             GetWordText(aFile,bText);
             aText.Text:=bText;
           end;
-       '.odt','.ods':
+       '.odt','.ods','.odp':
            begin
              aDoc := TODFDocument.Create;
              aDoc.FileName:=FileToLoad;
@@ -110,7 +110,7 @@ var
 begin
   Result := '';
   case lowercase(ExtractFileExt(FileToLoad)) of
-   '.odt','.ods','.odg','.fcstd':
+   '.odt','.ods','.odg','.odp','.fcstd':
      begin
        aDoc := TODFDocument.Create;
        try
