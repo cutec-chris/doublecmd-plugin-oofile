@@ -39,21 +39,26 @@ var
   aContent : string;
   aContent2: String;
 begin
-  MemStream := TMemoryStream.Create;
-  OLEStorage := TOLEStorage.Create;
+  Result := True;
   try
-    // Only one stream is necessary for any number of worksheets
-    OLEDocument.Stream := MemStream;
-    OLEStorage.ReadOLEFile(aFileName, OLEDocument,'WordDocument');
-    if MemStream.Seek($800,soFromBeginning) = $800 then
-      begin
-        Setlength(aContent,MemStream.Size-$800);
-        MemStream.Read(aContent[1],MemStream.Size-$800);
-        aContent2 := ConvertEncoding(aContent,EncodingUCS2LE,EncodingUTF8);
-        aText:=StripUnwantedChar(aContent2);
-      end;
-  finally
-    OLEStorage.Free;
+    MemStream := TMemoryStream.Create;
+    OLEStorage := TOLEStorage.Create;
+    try
+      // Only one stream is necessary for any number of worksheets
+      OLEDocument.Stream := MemStream;
+      OLEStorage.ReadOLEFile(aFileName, OLEDocument,'WordDocument');
+      if MemStream.Seek($800,soFromBeginning) = $800 then
+        begin
+          Setlength(aContent,MemStream.Size-$800);
+          MemStream.Read(aContent[1],MemStream.Size-$800);
+          aContent2 := ConvertEncoding(aContent,EncodingUCS2LE,EncodingUTF8);
+          aText:=StripUnwantedChar(aContent2);
+        end;
+    finally
+      OLEStorage.Free;
+    end;
+  except
+    Result := False;
   end;
 end;
 
@@ -66,41 +71,44 @@ var
   bText: string;
   i: Integer;
 begin
-  aFile := FileToLoad;
-  aText := TStringList.Create;
-  if FileExists(aFile) then
-    begin
-      case lowercase(ExtractFileExt(aFile)) of
-      '.doc':
+  try
+    aFile := FileToLoad;
+    aText := TStringList.Create;
+    if FileExists(aFile) then
+      begin
+        case lowercase(ExtractFileExt(aFile)) of
+        '.doc':
+            begin
+              GetWordText(aFile,bText);
+              aText.Text:=bText;
+            end;
+         '.odt','.ods','.odp':
+             begin
+               aDoc := TODFDocument.Create;
+               aDoc.FileName:=FileToLoad;
+               aDoc.Open;
+               aText.Text := aDoc.AsString;
+               aDoc.Free;
+             end
+        else
           begin
-            GetWordText(aFile,bText);
-            aText.Text:=bText;
+            aText.LoadFromFile(aFile);
+            for i := 0 to 1500 do
+              if (length(copy(aText.Text,i,1))>0) and (ord(copy(aText.Text,i,1)[1]) > 127) then
+                begin
+                  break;
+                end;
+             aText.Text := copy(aText.Text,0,1500);
           end;
-       '.odt','.ods','.odp':
-           begin
-             aDoc := TODFDocument.Create;
-             aDoc.FileName:=FileToLoad;
-             aDoc.Open;
-             aText.Text := aDoc.AsString;
-             aDoc.Free;
-           end
-      else
-        begin
-          aText.LoadFromFile(aFile);
-          for i := 0 to 1500 do
-            if (length(copy(aText.Text,i,1))>0) and (ord(copy(aText.Text,i,1)[1]) > 127) then
-              begin
-                break;
-              end;
-           aText.Text := copy(aText.Text,0,1500);
         end;
+        if aText.Count>0 then
+          begin
+            Result := PChar(aText.Text);
+          end;
       end;
-      if aText.Count>0 then
-        begin
-          Result := PChar(aText.Text);
-        end;
-    end;
-  aText.Free;
+    aText.Free;
+  except
+  end;
 end;
 
 function ListGetPreviewBitmapFile(FileToLoad:pchar;OutputPath:pchar;width,height:integer;
@@ -109,21 +117,25 @@ var
   aDoc: TODFDocument;
 begin
   Result := '';
-  case lowercase(ExtractFileExt(FileToLoad)) of
-   '.odt','.ods','.odg','.odp','.fcstd':
-     begin
-       aDoc := TODFDocument.Create;
-       try
-         aDoc.FileName:=FileToLoad;
-         aDoc.Open;
-         if aDoc.ExtractFile('Thumbnails/thumbnail.png',OutputPath) then
-           Result := PChar(OutputPath+'Thumbnails'+DirectorySeparator+'thumbnail.png')
-         else if aDoc.ExtractFile('thumbnails/Thumbnail.png',OutputPath) then
-             Result := PChar(OutputPath+'thumbnails'+DirectorySeparator+'Thumbnail.png');
-         aDoc.Free;
-       except
+  try
+    case lowercase(ExtractFileExt(FileToLoad)) of
+     '.odt','.ods','.odg','.odp','.fcstd':
+       begin
+         aDoc := TODFDocument.Create;
+         try
+           aDoc.FileName:=FileToLoad;
+           aDoc.Open;
+           if aDoc.ExtractFile('Thumbnails/thumbnail.png',OutputPath) then
+             Result := PChar(OutputPath+'Thumbnails'+DirectorySeparator+'thumbnail.png')
+           else if aDoc.ExtractFile('thumbnails/Thumbnail.png',OutputPath) then
+               Result := PChar(OutputPath+'thumbnails'+DirectorySeparator+'Thumbnail.png');
+           aDoc.Free;
+         except
+         end;
        end;
-     end;
+    end;
+  except
+    Result := '';
   end;
 end;
 
